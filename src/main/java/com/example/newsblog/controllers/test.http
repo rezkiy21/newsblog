@@ -1,0 +1,59 @@
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+"fname" : "Ivan",
+  "lname": "Mershin",
+  "login": "bion",
+  "password": "qwdfvb",
+  "age": 23
+}
+
+###
+
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "fname" : "Alex",
+  "lname": "Rakov",
+  "login": "serA",
+  "password": "qwaszx",
+  "age": 31
+}
+
+###
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "fname" : "Darya",
+  "lname": "Klivrens",
+  "login": "Meriland",
+  "password": "zxasqw",
+  "age": 18
+}
+
+###
+
+GET http://localhost:8080/user/2
+
+###
+
+POST http://localhost:8080/user/login
+Content-Type: application/json
+
+{
+"login": "serA",
+  "password": "qwaszx"
+}
+
+###
+
+POST http://localhost:8080/news
+Content-Type: application/json
+
+{
+"newsName": "Attention!!!",
+  "context": "jpdifskld;hvuzdfkgjvhsboucgjvlhcgboi"
+}
